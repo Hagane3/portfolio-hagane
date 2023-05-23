@@ -11,20 +11,22 @@ import DownloadIcon from '@/assets/icons/download.svg';
 const Header = () => {
   return (
     <header className={classes.root}>
-      <div className={classes.profilePhoto}>
-        <Image src={ProfilePhoto} alt="profile photo" />
-      </div>
-      <div className={classes.profileInfo}>
-        <h1>Konrad Słomiany</h1>
-        <h2>Frontend Developer</h2>
-        <div className={classes.socialMedia}>
-          <a href="#">
-            <Image src={GithubIcon} alt="github icon" />
-          </a>
-          <a href="#">
-            <Image src={LinkedinIcon} alt="github icon" />
-          </a>
+      <div className={classes.profile}>
+        <Image src={ProfilePhoto} alt="profile photo" className={classes.profilePhoto} />
+        <div className={classes.profileInfo}>
+          <h1>Konrad Słomiany</h1>
+          <h2>Frontend Developer</h2>
+          <div className={classes.socialMedia}>
+            <a href="#">
+              <Image src={GithubIcon} alt="github icon" />
+            </a>
+            <a href="#">
+              <Image src={LinkedinIcon} alt="github icon" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div className={classes.profileDetails}>
         <div className={classes.profileFacts}>
           <div className={classes.factsItem}>
             <h3>

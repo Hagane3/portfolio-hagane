@@ -10,6 +10,8 @@
     padding: 0.6em;
     background-color: var(--button-primary);
     border-radius: 0.7em;
+    max-width: 500px;
+    margin: 0 auto;
 
     button {
       padding: 0.8em 0;
@@ -27,6 +29,10 @@
     display: grid;
     gap: 1.5em;
     margin-top: 2em;
+
+    @include mixins.lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .singleProject {
       min-height: 10em;

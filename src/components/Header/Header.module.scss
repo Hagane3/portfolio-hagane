@@ -1,43 +1,64 @@
+@use '@/styles/_mixins.scss';
+
 .root {
-  .profilePhoto {
+  .profile {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
 
-    img {
+    @include mixins.lg {
+      flex-direction: row;
+      gap: 2em;
+      text-align: left;
+    }
+
+    .profilePhoto {
       width: 10em;
       height: 10em;
       border-radius: 50%;
       outline: 4px solid var(--border-primary);
       border: 8px solid var(--background-primary);
     }
+
+    .profileInfo {
+      margin-top: 2.5em;
+
+      @include mixins.lg {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: var(--font-secondary);
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .socialMedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        margin-top: 1.25em;
+
+        @include mixins.lg {
+          justify-content: flex-start;
+        }
+      }
+    }
   }
 
-  .profileInfo {
+  .profileDetails {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2.5em;
-
-    h1 {
-      font-size: 2rem;
-      color: var(--font-secondary);
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-
-    .socialMedia {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5em;
-      margin-top: 1.25em;
-    }
 
     .profileFacts {
       display: grid;
@@ -62,6 +83,7 @@
       width: 100%;
       align-items: center;
       padding: 1em 0;
+      max-width: 500px;
 
       button {
         padding: 0.8em 0;
