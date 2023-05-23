@@ -56,6 +56,13 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <section className={classes.gridSection}>
+        <div className={classes.gridItem}></div>
+        <div className={classes.gridItem}></div>
+        <div className={classes.gridItem}></div>
+        <div className={classes.gridItem}></div>
+        <div className={classes.gridItem}></div>
+      </section>
     </main>
   );
 }
