@@ -1,0 +1,20 @@
+@use 'resets.scss';
+@use '_mixins.scss';
+@use '_breakpoints.scss';
+@use 'variables.scss';
+
+body {
+  background-color: var(--background-primary);
+  color: var(--font-primary);
+  padding: 0 1em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+
+  @include mixins.lg {
+    width: 100%;
+    max-width: max-content;
+  }
+}

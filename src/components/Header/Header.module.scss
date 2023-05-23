@@ -1,0 +1,102 @@
+@use '@/styles/_mixins.scss';
+
+.root {
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @include mixins.lg {
+      flex-direction: row;
+      gap: 2em;
+      text-align: left;
+    }
+
+    .profilePhoto {
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      outline: 4px solid var(--border-primary);
+      border: 8px solid var(--background-primary);
+    }
+
+    .profileInfo {
+      margin-top: 2.5em;
+
+      @include mixins.lg {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: var(--font-secondary);
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .socialMedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        margin-top: 1.25em;
+
+        @include mixins.lg {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .profileDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .profileFacts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1.25em 0;
+      margin-top: 1.875em;
+
+      .factsItem {
+        text-align: center;
+        font-weight: 500;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .cvContact {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+      width: 100%;
+      align-items: center;
+      padding: 1em 0;
+      max-width: 500px;
+
+      button {
+        padding: 0.8em 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.7em;
+        background-color: var(--button-primary);
+
+        &:nth-child(1) {
+          background-color: var(--button-secondary);
+          color: var(--font-tertiary);
+        }
+      }
+    }
+  }
+}
