@@ -1,4 +1,4 @@
-@import '@/styles/variables.scss';
+@use '@/styles/_mixins.scss';
 
 .root {
   .tabs {
@@ -8,7 +8,7 @@
     width: 100%;
     align-items: center;
     padding: 0.6em;
-    background-color: $button-primary;
+    background-color: var(--button-primary);
     border-radius: 0.7em;
 
     button {
@@ -18,7 +18,7 @@
       border-radius: 0.7em;
       font-weight: 300;
       &.active {
-        background-color: $button-active;
+        background-color: var(--button-active);
       }
     }
   }
@@ -31,7 +31,7 @@
     .singleProject {
       min-height: 10em;
       width: 100%;
-      background-color: $background-secondary;
+      background-color: var(--background-secondary);
       border-radius: 0.7em;
     }
   }

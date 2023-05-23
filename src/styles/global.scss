@@ -1,7 +1,10 @@
-@import '@/styles/variables.scss';
+@use 'resets.scss';
+@use '_mixins.scss';
+@use '_breakpoints.scss';
+@use 'variables.scss';
 
 body {
-  background-color: $background-primary;
-  color: $font-primary;
+  background-color: var(--background-primary);
+  color: var(--font-primary);
   padding: 0 1em;
 }
