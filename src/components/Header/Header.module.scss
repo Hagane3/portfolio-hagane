@@ -1,0 +1,82 @@
+@import '@/styles/variables.scss';
+
+.root {
+  .profilePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      outline: 4px solid $border-primary;
+      border: 8px solid $background-primary;
+    }
+  }
+
+  .profileInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5em;
+
+    h1 {
+      font-size: 2rem;
+      color: $font-secondary;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .socialMedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5em;
+      margin-top: 1.25em;
+    }
+
+    .profileFacts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1.25em 0;
+      margin-top: 1.875em;
+
+      .factsItem {
+        text-align: center;
+        font-weight: 500;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .cvContact {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+      width: 100%;
+      align-items: center;
+      padding: 1em 0;
+
+      button {
+        padding: 0.8em 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.7em;
+        background-color: $button-primary;
+
+        &:nth-child(1) {
+          background-color: $button-secondary;
+          color: $font-tertiary;
+        }
+      }
+    }
+  }
+}

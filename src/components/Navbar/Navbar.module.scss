@@ -1,0 +1,22 @@
+@import '@/styles/variables.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+
+  button {
+    background-color: $button-primary;
+    padding: 1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+  }
+}
