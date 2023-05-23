@@ -63,6 +63,20 @@ export default function Home() {
         <div className={classes.gridItem}></div>
         <div className={classes.gridItem}></div>
       </section>
+      <section className={classes.projectsSection}>
+        <div className={classes.tabs}>
+          <button className={classes.active}>Projects</button>
+          <button>Contributions</button>
+        </div>
+        <div className={classes.projects}>
+          <div className={classes.singleProject}></div>
+          <div className={classes.singleProject}></div>
+          <div className={classes.singleProject}></div>
+          <div className={classes.singleProject}></div>
+          <div className={classes.singleProject}></div>
+          <div className={classes.singleProject}></div>
+        </div>
+      </section>
     </main>
   );
 }
