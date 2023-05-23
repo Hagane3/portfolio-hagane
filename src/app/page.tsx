@@ -77,6 +77,9 @@ export default function Home() {
           <div className={classes.singleProject}></div>
         </div>
       </section>
+      <footer>
+        <span>&copy; Konrad Słomiany. 2023 All rights reserved.</span>
+      </footer>
     </main>
   );
 }
