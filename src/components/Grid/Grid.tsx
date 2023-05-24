@@ -3,6 +3,7 @@ import classes from './Grid.module.scss';
 import SpotifyTile from './Tiles/SpotifyTile/SpotifyTile';
 import GithubTile from './Tiles/GithubTile/GithubTile';
 import AboutTile from './Tiles/AboutTile/AboutTile';
+import LinkedinTile from './Tiles/LinkedinTile/LinkedinTile';
 
 const Grid = () => {
   return (
@@ -10,6 +11,7 @@ const Grid = () => {
       <SpotifyTile />
       <GithubTile />
       <AboutTile />
+      <LinkedinTile />
     </section>
   );
 };
