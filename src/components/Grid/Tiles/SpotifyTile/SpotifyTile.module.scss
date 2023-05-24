@@ -8,6 +8,8 @@
   text-align: center;
   align-items: center;
   border-radius: 0.7em;
+  box-shadow: var(--tile-shadow);
+
   .musicDetails {
     margin-top: 0.5em;
     .nowPlaying {

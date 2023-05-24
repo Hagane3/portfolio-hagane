@@ -5,6 +5,7 @@
   background-color: var(--tile-discord);
   border-radius: 0.7em;
   aspect-ratio: 1/1;
+  box-shadow: var(--tile-shadow);
 
   &:hover {
     cursor: pointer;

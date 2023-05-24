@@ -1,4 +1,4 @@
-:root {
+[data-theme='dark'] {
   --background-primary: #0c151d;
   --background-secondary: #f0eee6;
   --background-tertiary: #c3a48b;
@@ -17,4 +17,29 @@
   --tile-secondary: #777777;
   --tile-linkedin: #0e76a8;
   --tile-discord: #7289da;
+
+  --tile-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
+}
+
+[data-theme='light'] {
+  --background-primary: #fcf8f4;
+  --background-secondary: #f0eee6;
+  --background-tertiary: #c3a48b;
+
+  --button-primary: #ffffff;
+  --button-secondary: #dbb18e;
+  --button-active: #d7d7d7;
+
+  --border-primary: #dbb18e;
+
+  --font-primary: #575757;
+  --font-secondary: #3d3d3d;
+  --font-tertiary: #3d3d3d;
+
+  --tile-primary: #ffffff;
+  --tile-secondary: #777777;
+  --tile-linkedin: #0e76a8;
+  --tile-discord: #7289da;
+
+  --tile-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
 }

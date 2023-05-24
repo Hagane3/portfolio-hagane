@@ -10,6 +10,7 @@
   border-radius: 0.7em;
   grid-row: 1/2;
   position: relative;
+  box-shadow: var(--tile-shadow);
 
   @include mixins.lg {
     padding: 3em 1em;
