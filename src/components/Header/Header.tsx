@@ -17,12 +17,14 @@ const Header = () => {
           <h1>Konrad Słomiany</h1>
           <h2>Frontend Developer</h2>
           <div className={classes.socialMedia}>
-            <a href="#">
-              <Image src={GithubIcon} alt="github icon" />
-            </a>
-            <a href="#">
-              <Image src={LinkedinIcon} alt="github icon" />
-            </a>
+            <div className={classes.wrapper}>
+              <a href="#">
+                <Image src={GithubIcon} alt="github icon" />
+              </a>
+              <a href="#">
+                <Image src={LinkedinIcon} alt="github icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

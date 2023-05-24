@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--tile-shadow);
 
     img {
       width: 1.7em;

@@ -4,22 +4,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  padding: 2em 0;
+  padding: 3em 0;
 
   @include mixins.lg {
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
-  }
-
-  .gridItem {
-    background-color: var(--background-secondary);
-
-    min-width: 5em;
-    aspect-ratio: 1/1;
-    border-radius: 0.8em;
-
-    &:nth-child(1) {
-      background-color: var(--background-tertiary);
-    }
+    gap: 2em;
   }
 }

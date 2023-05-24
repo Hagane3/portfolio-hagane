@@ -1,0 +1,54 @@
+@use '@/styles/_mixins.scss';
+
+.root {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  background-color: var(--tile-primary);
+  grid-column: span 2;
+  padding: 2em 1em;
+  border-radius: 0.7em;
+  position: relative;
+  box-shadow: var(--tile-shadow);
+
+  @include mixins.lg {
+    justify-content: space-around;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  span {
+    font-size: 0.8rem;
+    text-align: justify;
+
+    @include mixins.lg {
+      font-size: 0.9rem;
+    }
+  }
+
+  .joinUs {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      border: 1px solid var(--border-primary);
+      border-radius: 0.7em;
+      padding: 0.2em 1.2em;
+      font-size: 0.8rem;
+      display: flex;
+      gap: 0.5em;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .socialsImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, -60%);
+  }
+}

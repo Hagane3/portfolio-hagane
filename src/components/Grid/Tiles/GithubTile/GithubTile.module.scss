@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tile-secondary);
+  border-radius: 0.7em;
+  aspect-ratio: 1/1;
+  box-shadow: var(--tile-shadow);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover img {
+    transform: scale(1.02);
+  }
+
+  img {
+    width: 40%;
+    height: 40%;
+    transition: 0.2s ease;
+  }
+}
