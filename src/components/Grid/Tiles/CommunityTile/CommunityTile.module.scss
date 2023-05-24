@@ -1,5 +1,8 @@
+@use '@/styles/_mixins.scss';
+
 .root {
   display: flex;
+  gap: 1em;
   flex-direction: column;
   background-color: var(--tile-primary);
   grid-column: span 2;
@@ -7,9 +10,19 @@
   border-radius: 0.7em;
   position: relative;
 
+  @include mixins.lg {
+    justify-content: space-around;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
   span {
     font-size: 0.8rem;
     text-align: justify;
+
+    @include mixins.lg {
+      font-size: 0.9rem;
+    }
   }
 
   .joinUs {
@@ -24,6 +37,10 @@
       display: flex;
       gap: 0.5em;
       align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 

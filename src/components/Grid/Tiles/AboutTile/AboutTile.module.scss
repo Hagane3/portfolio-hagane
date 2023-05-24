@@ -1,3 +1,5 @@
+@use '@/styles/_mixins.scss';
+
 .root {
   display: flex;
   align-items: center;
@@ -9,9 +11,17 @@
   grid-row: 1/2;
   position: relative;
 
+  @include mixins.lg {
+    padding: 3em 1em;
+  }
+
   span {
     font-size: 0.8rem;
     text-align: justify;
+
+    @include mixins.lg {
+      font-size: 0.9rem;
+    }
   }
 
   img {

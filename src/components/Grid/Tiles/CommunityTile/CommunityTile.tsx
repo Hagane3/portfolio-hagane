@@ -8,8 +8,8 @@ const CommunityTile = () => {
   return (
     <div className={classes.root}>
       <span>
-        If you're looking for a healthy community to support people at the beginning of their journey in IT - join us.
-        If you're experienced in the industry and want to help others - you'll find a place for you, too.
+        If you&apos;re looking for a healthy community to support people at the beginning of their journey in IT - join
+        us. If you&apos;re experienced in the industry and want to help others - you&apos;ll find a place for you, too.
       </span>
       <div className={classes.joinUs}>
         <button>
