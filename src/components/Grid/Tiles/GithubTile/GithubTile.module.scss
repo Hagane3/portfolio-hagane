@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tile-secondary);
+  border-radius: 0.7em;
+
+  img {
+    width: 40%;
+    height: 40%;
+  }
+}
