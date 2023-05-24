@@ -12,9 +12,11 @@ const CommunityTile = () => {
         us. If you&apos;re experienced in the industry and want to help others - you&apos;ll find a place for you, too.
       </span>
       <div className={classes.joinUs}>
-        <button>
-          Join us <Image src={ArrowIcon} alt="arrow icon" />
-        </button>
+        <a href="https://discord.gg/NTJRPKeXzn" target="_blank">
+          <button>
+            Join us <Image src={ArrowIcon} alt="arrow icon" />
+          </button>
+        </a>
       </div>
       <Image className={classes.socialsImage} src={SocialsImage} alt="avatar sit" />
     </div>
