@@ -11,21 +11,18 @@ type Props = {
   children: React.ReactNode;
 };
 
-const localTheme = window.localStorage.getItem('theme');
-
 const themeContextDefaultValues: themeContextType = {
-  theme: localTheme || 'dark',
+  theme: 'dark',
   setThemeHandler: () => {},
 };
 
 const ThemeContext = createContext<themeContextType>(themeContextDefaultValues);
 
 export function ThemeProvider({ children }: Props) {
-  const [theme, setTheme] = useState(localTheme || 'dark');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     document.body.dataset.theme = theme;
-    window.localStorage.setItem('theme', theme);
   }, [theme]);
 
   const setThemeHandler = () => {
