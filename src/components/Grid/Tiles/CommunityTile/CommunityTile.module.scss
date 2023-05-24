@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tile-primary);
+  grid-column: span 2;
+  padding: 2em 1em;
+  border-radius: 0.7em;
+  position: relative;
+
+  span {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .joinUs {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      border: 1px solid var(--border-primary);
+      border-radius: 0.7em;
+      padding: 0.2em 1.2em;
+      font-size: 0.8rem;
+      display: flex;
+      gap: 0.5em;
+      align-items: center;
+    }
+  }
+
+  .socialsImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, -60%);
+  }
+}

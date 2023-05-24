@@ -5,6 +5,7 @@ import GithubTile from './Tiles/GithubTile/GithubTile';
 import AboutTile from './Tiles/AboutTile/AboutTile';
 import LinkedinTile from './Tiles/LinkedinTile/LinkedinTile';
 import DiscordTile from './Tiles/DiscordTile/DiscordTile';
+import CommunityTile from './Tiles/CommunityTile/CommunityTile';
 
 const Grid = () => {
   return (
@@ -14,6 +15,7 @@ const Grid = () => {
       <AboutTile />
       <LinkedinTile />
       <DiscordTile />
+      <CommunityTile />
     </section>
   );
 };
