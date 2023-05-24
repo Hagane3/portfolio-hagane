@@ -1,0 +1,30 @@
+.root {
+  background-color: var(--button-primary);
+  padding: 1em;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.7em;
+  .musicDetails {
+    .nowPlaying {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    .songDetails {
+      h4 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      h5 {
+        font-weight: 400;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

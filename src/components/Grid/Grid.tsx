@@ -1,14 +1,11 @@
 import React from 'react';
 import classes from './Grid.module.scss';
+import SpotifyTile from './Tiles/SpotifyTile/SpotifyTile';
 
 const Grid = () => {
   return (
     <section className={classes.root}>
-      <div className={classes.gridItem}></div>
-      <div className={classes.gridItem}></div>
-      <div className={classes.gridItem}></div>
-      <div className={classes.gridItem}></div>
-      <div className={classes.gridItem}></div>
+      <SpotifyTile />
     </section>
   );
 };

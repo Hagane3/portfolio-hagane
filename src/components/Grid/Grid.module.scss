@@ -10,16 +10,4 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
   }
-
-  .gridItem {
-    background-color: var(--background-secondary);
-
-    min-width: 5em;
-    aspect-ratio: 1/1;
-    border-radius: 0.8em;
-
-    &:nth-child(1) {
-      background-color: var(--background-tertiary);
-    }
-  }
 }
