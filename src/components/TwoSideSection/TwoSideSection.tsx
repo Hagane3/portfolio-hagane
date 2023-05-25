@@ -20,7 +20,7 @@ const Projects = () => {
           Projects
         </button>
         <button className={!isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
-          Contributions
+          About me
         </button>
       </div>
       {isProjectsActive ? <AllProjects /> : <AboutMe />}
