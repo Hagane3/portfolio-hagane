@@ -6,7 +6,9 @@ import LinkedinIcon from '@/assets/icons/linkedin.svg';
 const LinkedinTile = () => {
   return (
     <div className={classes.root}>
-      <Image src={LinkedinIcon} alt="linkedin icon" />
+      <a href="https://www.linkedin.com/in/konradslomiany/" target="_blank">
+        <Image src={LinkedinIcon} alt="linkedin icon" />
+      </a>
     </div>
   );
 };

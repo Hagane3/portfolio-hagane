@@ -18,10 +18,10 @@ const Header = () => {
           <h2>Frontend Developer</h2>
           <div className={classes.socialMedia}>
             <div className={classes.wrapper}>
-              <a href="#">
+              <a href="https://github.com/Hagane3" target="_blank">
                 <Image src={GithubIcon} alt="github icon" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/konradslomiany/" target="_blank">
                 <Image src={LinkedinIcon} alt="github icon" />
               </a>
             </div>
@@ -47,9 +47,12 @@ const Header = () => {
           </div>
         </div>
         <div className={classes.cvContact}>
-          <button>
-            Download CV <Image src={DownloadIcon} alt="download icon" />
-          </button>
+          <a href="https://drive.google.com/file/d/1LSC2-1vCm6lCE2muoFlPvfu4xQmd-Cz-/view?usp=sharing" target="_blank">
+            <button>
+              Download CV <Image src={DownloadIcon} alt="download icon" />
+            </button>
+          </a>
+
           <button>Contact me</button>
         </div>
       </div>

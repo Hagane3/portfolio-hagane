@@ -6,7 +6,9 @@ import GithubIcon from '@/assets/icons/github.svg';
 const GithubTile = () => {
   return (
     <div className={classes.root}>
-      <Image src={GithubIcon} alt="github icon" />
+      <a href="https://github.com/Hagane3" target="_blank">
+        <Image src={GithubIcon} alt="github icon" />
+      </a>
     </div>
   );
 };

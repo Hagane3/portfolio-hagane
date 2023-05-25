@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar/Navbar';
 import Header from '@/components/Header/Header';
 import Grid from '@/components/Grid/Grid';
-import Projects from '@/components/Projects/Projects';
+import TwoSideSection from '@/components/TwoSideSection/TwoSideSection';
 import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Grid />
-      <Projects />
+      <TwoSideSection />
       <Footer />
     </main>
   );

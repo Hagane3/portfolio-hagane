@@ -6,7 +6,9 @@ import DiscordIcon from '@/assets/icons/discord.svg';
 const DiscordTile = () => {
   return (
     <div className={classes.root}>
-      <Image src={DiscordIcon} alt="discord icon" />
+      <a href="">
+        <Image src={DiscordIcon} alt="discord icon" />
+      </a>
     </div>
   );
 };
