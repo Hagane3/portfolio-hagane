@@ -6,7 +6,7 @@
   flex-direction: column;
   background-color: var(--tile-primary);
   grid-column: span 2;
-  padding: 2em 2em;
+  padding: 2em 1.5em;
   border-radius: 0.7em;
   position: relative;
   box-shadow: var(--tile-shadow);
@@ -19,11 +19,11 @@
   }
 
   span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: justify;
 
     @include mixins.lg {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 
