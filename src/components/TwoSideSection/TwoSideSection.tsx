@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import classes from './Projects.module.scss';
+import classes from './TwoSideSection.module.scss';
 import { useState } from 'react';
 
 const Projects = () => {
