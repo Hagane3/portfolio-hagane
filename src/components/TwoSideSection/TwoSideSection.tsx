@@ -2,36 +2,28 @@
 
 import React from 'react';
 import classes from './TwoSideSection.module.scss';
+import AllProjects from '@/components/TwoSideSection/AllProjects/AllProjects';
+import AboutMe from '@/components/TwoSideSection/AboutMe/AboutMe';
 import { useState } from 'react';
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState('projects');
+  const [isProjectsActive, setIsProjectsActive] = useState(true);
 
-  const changeTabHandler = (tabName: string) => {
-    setActiveTab(tabName);
+  const toggleTabHandler = () => {
+    setIsProjectsActive((prevState) => !prevState);
   };
 
   return (
     <section className={classes.root}>
       <div className={classes.tabs}>
-        <button className={activeTab === 'projects' ? classes.active : ''} onClick={() => changeTabHandler('projects')}>
+        <button className={isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
           Projects
         </button>
-        <button
-          className={activeTab === 'contributions' ? classes.active : ''}
-          onClick={() => changeTabHandler('contributions')}
-        >
+        <button className={!isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
           Contributions
         </button>
       </div>
-      <div className={classes.projects}>
-        <div className={classes.singleProject}></div>
-        <div className={classes.singleProject}></div>
-        <div className={classes.singleProject}></div>
-        <div className={classes.singleProject}></div>
-        <div className={classes.singleProject}></div>
-        <div className={classes.singleProject}></div>
-      </div>
+      {isProjectsActive ? <AllProjects /> : <AboutMe />}
     </section>
   );
 };

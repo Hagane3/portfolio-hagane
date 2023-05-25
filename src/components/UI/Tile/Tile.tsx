@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Tile.module.scss';
 
 type Props = {
-  href: string;
+  href?: string;
   children: React.ReactNode;
   color: string;
 };

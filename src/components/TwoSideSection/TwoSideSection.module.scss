@@ -27,21 +27,4 @@
       }
     }
   }
-
-  .projects {
-    display: grid;
-    gap: 1.5em;
-    margin-top: 2em;
-
-    @include mixins.lg {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .singleProject {
-      min-height: 10em;
-      width: 100%;
-      background-color: var(--background-secondary);
-      border-radius: 0.7em;
-    }
-  }
 }

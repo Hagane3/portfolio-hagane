@@ -1,0 +1,15 @@
+@use '@/styles/_mixins.scss';
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+
+  @include mixins.sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include mixins.lg {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
