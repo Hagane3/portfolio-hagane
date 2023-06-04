@@ -2,12 +2,12 @@ import React from 'react';
 import classes from './AllProjects.module.scss';
 import SingleProject from './SingleProject/SingleProject';
 
-const Projects = () => {
+const Projects = ({ projects }: any) => {
   return (
     <div className={classes.root}>
-      <SingleProject />
-      <SingleProject />
-      <SingleProject />
+      {projects.map((item: any) => (
+        <SingleProject key={item.id} project={item} />
+      ))}
     </div>
   );
 };
