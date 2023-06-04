@@ -10,11 +10,8 @@ export default function Home() {
   console.log(projects);
   return (
     <main>
-      <Navbar />
-      <Header />
       <Grid />
       <TwoSideSection projects={projects} />
-      <Footer />
     </main>
   );
 }
