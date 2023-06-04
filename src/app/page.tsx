@@ -7,7 +7,7 @@ import { getAllProjects } from '@/utils/getAllProjects';
 
 export default function Home() {
   const projects = getAllProjects();
-  console.log(projects);
+
   return (
     <main>
       <Grid />

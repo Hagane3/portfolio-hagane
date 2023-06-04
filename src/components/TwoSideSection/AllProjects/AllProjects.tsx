@@ -6,7 +6,7 @@ const Projects = ({ projects }: any) => {
   return (
     <div className={classes.root}>
       {projects.map((item: any) => (
-        <SingleProject key={item.id} project={item} />
+        <SingleProject key={item.data.id} project={item} />
       ))}
     </div>
   );
