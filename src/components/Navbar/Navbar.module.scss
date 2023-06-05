@@ -4,18 +4,42 @@
   align-items: center;
   padding: 2em 0;
 
-  button {
-    background-color: var(--button-primary);
-    padding: 1em;
+  .container {
+    position: relative;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: var(--tile-shadow);
 
-    img {
-      width: 1.7em;
-      height: 1.7em;
+    button,
+    a {
+      background-color: var(--button-primary);
+      padding: 1em;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: var(--tile-shadow);
+      z-index: 3;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 1.7em;
+        height: 1.7em;
+      }
+    }
+    a.backIcon {
+      position: absolute;
+      top: 0;
+      left: -90%;
+      padding-right: 3em;
+      border-radius: 20%;
+      z-index: 1;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
