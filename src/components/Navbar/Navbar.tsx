@@ -12,7 +12,6 @@ import Link from 'next/link';
 const Navbar = () => {
   const { setThemeHandler } = useTheme();
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <nav className={classes.root}>

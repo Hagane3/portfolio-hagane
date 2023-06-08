@@ -24,7 +24,7 @@ const Grid = () => {
       </Tile>
 
       <AboutTile />
-      <Tile href="" color="#7289da">
+      <Tile href="https://discord.gg/CAUWFXBb" color="#7289da">
         <Image src={DiscordIcon} alt="discord icon" />
       </Tile>
       <CommunityTile />
