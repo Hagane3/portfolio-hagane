@@ -11,9 +11,13 @@
 
   --border-primary: #c3a48b;
 
+  --markdown-heading: #c3a48b;
+
   --font-primary: #a3abb2;
   --font-secondary: #f1f2f4;
   --font-tertiary: #3d3d3d;
+
+  --backdrop-font: #ffffff;
 
   --tile-primary: #171f26;
   --tile-secondary: #777777;
@@ -21,6 +25,7 @@
   --tile-discord: #7289da;
 
   --tile-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
+  --image-shadow: rgba(0, 0, 0, 0.3);
 }
 
 [data-theme='dark'] {
@@ -36,14 +41,19 @@
 
   --border-primary: #c3a48b;
 
+  --markdown-heading: #c3a48b;
+
   --font-primary: #a3abb2;
   --font-secondary: #f1f2f4;
   --font-tertiary: #3d3d3d;
+
+  --backdrop-font: #ffffff;
 
   --tile-primary: #171f26;
   --tile-secondary: #777777;
 
   --tile-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
+  --image-shadow: rgba(100, 100, 100, 0.3);
 }
 
 [data-theme='light'] {
@@ -59,12 +69,17 @@
 
   --border-primary: #dbb18e;
 
+  --markdown-heading: #c3a48b;
+
   --font-primary: #575757;
   --font-secondary: #3d3d3d;
   --font-tertiary: #3d3d3d;
+
+  --backdrop-font: #ffffff;
 
   --tile-primary: #ffffff;
   --tile-secondary: #777777;
 
   --tile-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
+  --image-shadow: rgba(0, 0, 0, 0.3);
 }
