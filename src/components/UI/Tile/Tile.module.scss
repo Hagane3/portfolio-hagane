@@ -2,9 +2,14 @@
   border-radius: 0.7em;
   aspect-ratio: 1/1;
   box-shadow: var(--tile-shadow);
+  position: relative;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:hover .popup {
+    transform: translate(-25%, -25%) rotate(-25deg) scale(1);
   }
 
   &:hover img {
@@ -21,7 +26,20 @@
     img {
       width: 40%;
       height: 40%;
-      transition: 0.2s ease;
+      transition: 0.1s ease-in-out;
     }
+  }
+
+  .popup {
+    position: absolute;
+    transition: 0.5s ease;
+    transform-origin: center;
+    font-size: 0.8rem;
+    border-radius: 0.4em;
+    top: 0;
+    left: 0;
+    background-color: var(--popup-background);
+    padding: 0.2em 1em;
+    transform: translate(-25%, -25%) rotate(-25deg) scale(0);
   }
 }
