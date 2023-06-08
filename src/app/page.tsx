@@ -3,15 +3,15 @@ import Header from '@/components/Header/Header';
 import Grid from '@/components/Grid/Grid';
 import TwoSideSection from '@/components/TwoSideSection/TwoSideSection';
 import Footer from '@/components/Footer/Footer';
+import { getAllProjects } from '@/utils/getAllProjects';
 
 export default function Home() {
+  const projects = getAllProjects();
+
   return (
     <main>
-      <Navbar />
-      <Header />
       <Grid />
-      <TwoSideSection />
-      <Footer />
+      <TwoSideSection projects={projects} />
     </main>
   );
 }

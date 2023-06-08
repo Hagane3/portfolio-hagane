@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import classes from './Header.module.scss';
 
-import ProfilePhoto from '@/assets/images/profile-photo.png';
+import ProfilePhoto from '@/assets/images/profile-photo.webp';
 import GithubIcon from '@/assets/icons/github.svg';
 import LinkedinIcon from '@/assets/icons/linkedin.svg';
 import DownloadIcon from '@/assets/icons/download.svg';

@@ -1,10 +1,8 @@
 import React from 'react';
 import classes from './Grid.module.scss';
 import SpotifyTile from './Tiles/SpotifyTile/SpotifyTile';
-import GithubTile from './Tiles/GithubTile/GithubTile';
+
 import AboutTile from './Tiles/AboutTile/AboutTile';
-import LinkedinTile from './Tiles/LinkedinTile/LinkedinTile';
-import DiscordTile from './Tiles/DiscordTile/DiscordTile';
 import CommunityTile from './Tiles/CommunityTile/CommunityTile';
 
 import GithubIcon from '@/assets/icons/github.svg';
@@ -26,7 +24,7 @@ const Grid = () => {
       </Tile>
 
       <AboutTile />
-      <Tile href="" color="#7289da">
+      <Tile href="https://discord.gg/CAUWFXBb" color="#7289da">
         <Image src={DiscordIcon} alt="discord icon" />
       </Tile>
       <CommunityTile />

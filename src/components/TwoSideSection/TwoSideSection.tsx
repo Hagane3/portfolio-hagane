@@ -6,7 +6,7 @@ import AllProjects from '@/components/TwoSideSection/AllProjects/AllProjects';
 import AboutMe from '@/components/TwoSideSection/AboutMe/AboutMe';
 import { useState } from 'react';
 
-const Projects = () => {
+const Projects = ({ projects }: any) => {
   const [isProjectsActive, setIsProjectsActive] = useState(true);
 
   const toggleTabHandler = () => {
@@ -20,10 +20,10 @@ const Projects = () => {
           Projects
         </button>
         <button className={!isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
-          Contributions
+          About me
         </button>
       </div>
-      {isProjectsActive ? <AllProjects /> : <AboutMe />}
+      {isProjectsActive ? <AllProjects projects={projects} /> : <AboutMe />}
     </section>
   );
 };

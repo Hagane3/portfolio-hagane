@@ -1,15 +1,13 @@
 import React from 'react';
 import classes from './AllProjects.module.scss';
+import SingleProject from './SingleProject/SingleProject';
 
-const Projects = () => {
+const Projects = ({ projects }: any) => {
   return (
     <div className={classes.root}>
-      <div className={classes.singleProject}></div>
-      <div className={classes.singleProject}></div>
-      <div className={classes.singleProject}></div>
-      <div className={classes.singleProject}></div>
-      <div className={classes.singleProject}></div>
-      <div className={classes.singleProject}></div>
+      {projects.map((item: any) => (
+        <SingleProject key={item.data.id} project={item} />
+      ))}
     </div>
   );
 };
