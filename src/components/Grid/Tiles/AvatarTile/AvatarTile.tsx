@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './AvatarTile.module.scss';
 import Image from 'next/image';
-import avatarOk from '@/assets/images/avatar-ok.png';
+import avatarOk from '@/assets/images/avatar-ok.webp';
 
 const SpotifyTile = () => {
   return (
