@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Grid.module.scss';
-import SpotifyTile from './Tiles/SpotifyTile/SpotifyTile';
+import AvatarTile from './Tiles/AvatarTile/AvatarTile';
 
 import AboutTile from './Tiles/AboutTile/AboutTile';
 import CommunityTile from './Tiles/CommunityTile/CommunityTile';
@@ -15,7 +15,7 @@ import Image from 'next/image';
 const Grid = () => {
   return (
     <section className={classes.root}>
-      <SpotifyTile />
+      <AvatarTile />
       <Tile href="https://github.com/Hagane3" color="#777777">
         <Image src={GithubIcon} alt="github icon" />
       </Tile>
