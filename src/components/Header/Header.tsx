@@ -53,7 +53,9 @@ const Header = () => {
             </button>
           </a>
 
-          <button>Contact me</button>
+          <button>
+            <a href="mailto:konslo96@gmail.com">Contact me</a>
+          </button>
         </div>
       </div>
     </header>
