@@ -100,28 +100,21 @@
       padding: 1em 0;
       max-width: 500px;
 
-      button {
+      a {
         padding: 0.8em 0;
         width: 100%;
         text-align: center;
         border-radius: 0.7em;
         background-color: var(--button-primary);
+
         &:hover {
           cursor: pointer;
         }
       }
 
-      a {
-        width: 100%;
-
-        button {
-          padding: 0.8em 0;
-
-          text-align: center;
-          border-radius: 0.7em;
-          background-color: var(--button-secondary);
-          color: var(--font-tertiary);
-        }
+      :first-of-type {
+        background-color: var(--button-secondary);
+        color: var(--font-tertiary);
       }
     }
   }

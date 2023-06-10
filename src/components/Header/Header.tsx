@@ -48,14 +48,9 @@ const Header = () => {
         </div>
         <div className={classes.cvContact}>
           <a href="https://drive.google.com/file/d/1LSC2-1vCm6lCE2muoFlPvfu4xQmd-Cz-/view?usp=sharing" target="_blank">
-            <button>
-              Download CV <Image src={DownloadIcon} alt="download icon" />
-            </button>
+            Download CV <Image src={DownloadIcon} alt="download icon" />
           </a>
-
-          <button>
-            <a href="mailto:konslo96@gmail.com">Contact me</a>
-          </button>
+          <a href="mailto:konslo96@gmail.com">Contact me</a>
         </div>
       </div>
     </header>
