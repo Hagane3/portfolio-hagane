@@ -11,6 +11,11 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['300', '400', '500', '700
 export const metadata = {
   title: 'Konrad Słomiany - Frontend Developer',
   description: 'Konrad Słomiany portfolio website',
+  keywords: 'Konrad Słomiany, Frontend Developer, Portfolio, Website',
+  content: 'Konrad Słomiany portfolio website',
+  property: {
+    'og:title': 'Konrad Słomiany - Frontend Developer',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

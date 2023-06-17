@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Grid.module.scss';
-import SpotifyTile from './Tiles/SpotifyTile/SpotifyTile';
+import AvatarTile from './Tiles/AvatarTile/AvatarTile';
 
 import AboutTile from './Tiles/AboutTile/AboutTile';
 import CommunityTile from './Tiles/CommunityTile/CommunityTile';
@@ -15,18 +15,20 @@ import Image from 'next/image';
 const Grid = () => {
   return (
     <section className={classes.root}>
-      <SpotifyTile />
       <Tile href="https://github.com/Hagane3" color="#777777">
         <Image src={GithubIcon} alt="github icon" />
       </Tile>
+
       <Tile href="https://www.linkedin.com/in/konradslomiany/" color="#0e76a8">
         <Image src={LinkedinIcon} alt="linkedin icon" />
       </Tile>
 
       <AboutTile />
+      <AvatarTile />
       <Tile href="https://discord.gg/CAUWFXBb" color="#7289da">
         <Image src={DiscordIcon} alt="discord icon" />
       </Tile>
+
       <CommunityTile />
     </section>
   );

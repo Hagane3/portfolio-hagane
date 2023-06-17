@@ -79,5 +79,14 @@
   img {
     margin: 3rem 0;
     box-shadow: var(--image-shadow) 0px 25px 50px -12px;
+    border-radius: 0.8em;
+    transition: all 0.2s ease-in-out;
+
+    @include mixins.lg {
+      max-width: 40em;
+      &:hover {
+        transform: scale(1.015);
+      }
+    }
   }
 }

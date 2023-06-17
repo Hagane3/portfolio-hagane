@@ -22,11 +22,17 @@ export function ThemeProvider({ children }: Props) {
   const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', theme);
+    } else {
+      setTheme(localStorage.getItem('theme')!);
+    }
     document.body.dataset.theme = theme;
   }, [theme]);
 
   const setThemeHandler = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
+    localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
   };
 
   return <ThemeContext.Provider value={{ theme, setThemeHandler }}>{children}</ThemeContext.Provider>;
