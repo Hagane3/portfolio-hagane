@@ -19,9 +19,14 @@ const themeContextDefaultValues: themeContextType = {
 const ThemeContext = createContext<themeContextType>(themeContextDefaultValues);
 
 export function ThemeProvider({ children }: Props) {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', theme);
+    } else {
+      setTheme(localStorage.getItem('theme')!);
+    }
     document.body.dataset.theme = theme;
   }, [theme]);
 
