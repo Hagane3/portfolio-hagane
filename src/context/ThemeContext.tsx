@@ -19,7 +19,7 @@ const themeContextDefaultValues: themeContextType = {
 const ThemeContext = createContext<themeContextType>(themeContextDefaultValues);
 
 export function ThemeProvider({ children }: Props) {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   useEffect(() => {
     document.body.dataset.theme = theme;
@@ -27,6 +27,7 @@ export function ThemeProvider({ children }: Props) {
 
   const setThemeHandler = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
+    localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark');
   };
 
   return <ThemeContext.Provider value={{ theme, setThemeHandler }}>{children}</ThemeContext.Provider>;
