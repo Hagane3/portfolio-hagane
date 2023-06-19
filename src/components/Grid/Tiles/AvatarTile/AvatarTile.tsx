@@ -8,6 +8,7 @@ const SpotifyTile = () => {
   return (
     <div className={classes.root}>
       <Image src={avatarOk} alt="avatar with macbook" />
+      <p className={classes.chatBubble}>Let&apos;s create something!</p>
     </div>
   );
 };
