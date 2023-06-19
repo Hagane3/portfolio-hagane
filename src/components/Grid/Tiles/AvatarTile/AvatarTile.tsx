@@ -17,7 +17,7 @@ const SpotifyTile = () => {
   return (
     <div className={classes.root}>
       <Image src={avatarOk} alt="avatar with macbook" onClick={toggleBubble} />
-      <p className={classes.chatBubble}>Let's create something!</p>
+      <p className={classes.chatBubble}>Let&apos;s create something!</p>
     </div>
   );
 };
