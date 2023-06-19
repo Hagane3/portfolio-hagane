@@ -7,23 +7,22 @@ import AboutMe from '@/components/TwoSideSection/AboutMe/AboutMe';
 import { useState } from 'react';
 
 const Projects = ({ projects }: any) => {
-  const [isProjectsActive, setIsProjectsActive] = useState(true);
+  const [activeTab, setActiveTab] = useState('projects');
 
-  const toggleTabHandler = () => {
-    setIsProjectsActive((prevState) => !prevState);
+  const changeTabHandler = (tab: string) => {
+    setActiveTab(tab);
   };
 
   return (
     <section className={classes.root}>
       <div className={classes.tabs}>
-        <button className={isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
-          Projects
-        </button>
-        <button className={!isProjectsActive ? classes.active : ''} onClick={toggleTabHandler}>
+        <button onClick={() => changeTabHandler('projects')}>Projects</button>
+        <button onClick={() => changeTabHandler('about')} className={activeTab === 'about' ? classes.active : ''}>
           About me
         </button>
+        <div className={`${classes.slider} ${activeTab === 'about' ? classes.active : ''}`}></div>
       </div>
-      {isProjectsActive ? <AllProjects projects={projects} /> : <AboutMe />}
+      {activeTab === 'projects' ? <AllProjects projects={projects} /> : <AboutMe />}
     </section>
   );
 };
