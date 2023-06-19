@@ -7,14 +7,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &:hover img {
     transform: scale(1.05);
+
+    & ~ .chatBubble {
+      opacity: 1;
+    }
   }
 
   img {
     width: 70%;
     height: 70%;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .chatBubble {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(25%, -25%);
+    font-size: 0.65rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 10%;
+    background: var(--bubble-background);
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: var(--bubble-font);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+    &::before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-left: 24px solid var(--bubble-background);
+      border-right: 12px solid transparent;
+      border-top: 12px solid var(--bubble-background);
+      border-bottom: 20px solid transparent;
+      left: 32px;
+      bottom: -24px;
+    }
   }
 }
