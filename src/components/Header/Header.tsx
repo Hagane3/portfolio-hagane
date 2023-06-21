@@ -32,22 +32,22 @@ const Header = () => {
         <div className={classes.profileFacts}>
           <div className={classes.factsItem}>
             <h3>
-              <span>2+</span> Years of learning
+              <span>1.5+</span> Years of learning
             </h3>
           </div>
           <div className={classes.factsItem}>
             <h3>
-              <span>15+</span> Completed projects
+              <span>12+</span> Completed projects
             </h3>
           </div>
           <div className={classes.factsItem}>
             <h3>
-              <span>8+</span> Personal side projects
+              <span>11+</span> Personal side projects
             </h3>
           </div>
         </div>
         <div className={classes.cvContact}>
-          <a href="https://drive.google.com/file/d/1LSC2-1vCm6lCE2muoFlPvfu4xQmd-Cz-/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/1pbZ9PuMcOIPTfzeQ_xMpaSK6Wh0y1ePr/view?usp=sharing" target="_blank">
             Download CV <Image src={DownloadIcon} alt="download icon" />
           </a>
           <a href="mailto:konslo96@gmail.com">Contact me</a>
