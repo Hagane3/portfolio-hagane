@@ -32,17 +32,17 @@ const Header = () => {
         <div className={classes.profileFacts}>
           <div className={classes.factsItem}>
             <h3>
-              <span>2+</span> Years of learning
+              <span>1.5+</span> Years of learning
             </h3>
           </div>
           <div className={classes.factsItem}>
             <h3>
-              <span>15+</span> Completed projects
+              <span>12+</span> Completed projects
             </h3>
           </div>
           <div className={classes.factsItem}>
             <h3>
-              <span>8+</span> Personal side projects
+              <span>11+</span> Personal side projects
             </h3>
           </div>
         </div>
