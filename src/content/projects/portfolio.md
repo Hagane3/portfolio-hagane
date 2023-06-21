@@ -1,7 +1,7 @@
 ---
 id: 4
 title: Portfolio
-url: https://portfolio-hagane-jfjpmt9on-hagane3.vercel.app/
+url: https://portfolio-hagane.vercel.app/
 image: https://i.ibb.co/NnWmPNf/portfolio1.jpg
 ---
 
@@ -21,5 +21,5 @@ Next.js (App Router), TypeScript, mdx, gray-matter, markdown-to-jsx, SASS
 
 In my portfolio website I used new approach in creating Next.js pages called App Router. It makes routing and rendering app much different than before. To store informations about my projects I used markdown. That was the hardest part in development process. I needed to use gray-matter to fetch meta informations about projects and makrdown-to-jsx library to convert markdown tags to html.
 
-[Live preview](https://portfolio-hagane-jfjpmt9on-hagane3.vercel.app/)
+[Live preview](https://portfolio-hagane.vercel.app/)
 [Check repository](https://github.com/Hagane3/portfolio-hagane)
