@@ -11,18 +11,14 @@ const AboutMe = () => {
           Hello there! I&apos;m <strong>Konrad</strong>, a dedicated and passionate frontend developer with a strong
           interest in programming. I approach my work with a positive mindset and a strong work ethic, aiming to create
           exceptional user experiences through elegant and efficient code. My journey into frontend development began
-          out of curiosity, which quickly turned into a full-blown passion. I realized the immense power of transforming
-          ideas into tangible digital solutions, and since then, I&apos;ve been captivated by the endless possibilities
-          in this field. Throughout my development journey, I have specialized in utilizing cutting-edge technologies
+          out of curiosity, which quickly turned into a full-blown passion. I have specialized in utilizing technologies
           like {''}
           <strong>React</strong>, <strong>Next.js</strong> and <strong>TypeScript</strong>. These tools enable me to
-          create dynamic and interactive user interfaces while ensuring a high level of code quality. In addition to
-          technical proficiency, I strongly believe in the value of collaboration and effective communication. By
-          fostering positive and inclusive working environments, I strive to deliver exceptional results. As the
-          industry keeps evolving, I continue to grow and seek inspiration from design and development philosophies that
-          prioritize simplicity, elegance, and intuitive user interfaces. I am committed to staying up-to-date with the
-          latest trends and best practices, ensuring that I deliver modern and forward-thinking solutions.{' '}
-          <strong>Let&apos;s collaborate and create something extraordinary together!</strong>
+          create dynamic and interactive user interfaces while ensuring a high level of code quality. I am committed to
+          staying up-to-date with the latest trends and best practices, ensuring that I deliver modern and
+          forward-thinking solutions. In addition to technical proficiency, I strongly believe in the value of
+          collaboration and effective communication.
+          <strong> Let&apos;s collaborate and create something extraordinary together!</strong>
         </p>
       </div>
       <div className={classes.techStack}>
